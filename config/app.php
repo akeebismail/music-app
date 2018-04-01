@@ -146,19 +146,29 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
         /*
          * Package Service Providers...
          */
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+
 
         /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+         App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\iTunesServiceProvider::class,
+        App\Providers\MediaServiceProvider::class,
+        App\Providers\MediaCacheServiceProvider::class,
+        App\Providers\UtilServiceProvider::class,
+        App\Providers\YouTubeServiceProvider::class,
+        App\Providers\DownloadServiceProvider::class,
+        App\Providers\LastfmServiceProvider::class,
+        Jackiedo\DotenvEditor\DotenvEditorServiceProvider::class,
+
 
     ],
 
