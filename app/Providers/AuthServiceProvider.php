@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Model\Playlist;
+use App\Model\User;
+use App\Policies\PlaylistPolicy;
+use App\Policies\UserPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -12,8 +16,10 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @var array
      */
+
     protected $policies = [
-        'App\Model' => 'App\Policies\ModelPolicy',
+        Playlist::class => PlaylistPolicy::class,
+        User::class => UserPolicy::class,
     ];
 
     /**
