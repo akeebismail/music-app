@@ -13,7 +13,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use ZipArchive;
 
-class SongZipArchirve
+class SongZipArchive
 {
     /**
      * @var ZipArchive
